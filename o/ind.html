@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PET HOUSE</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo2.png">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <!-- <link href="css/jquery.fatNav.css" rel="stylesheet"> -->
+    <link href="css/st.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b29395932e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div><img id="logo" src="img/logo2.png"></div>
+  
+    <div class="menu">
+        <div class="menu-item current-menu-item">
+          <h6>回首頁</h6>
+          <div class="wee"></div>
+        </div>
+        <div class="menu-item">
+          <h6>關於我們</h6>
+        </div>
+        <div class="menu-item">
+          <h6>捐款方式</h6>
+        </div>
+        <div class="menu-item">
+          <h6>領養專區</h6>
+        </div>
+       
+      </div>
+    <div id="toggleIcon" onclick="menuToggle()">
+        <div id="hamburger"></div>
+
+    </div>
+    <div id="menu-overlay">
+        <ul>
+            <li><a href="#">回主頁</a></li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">影音專區</a></li>
+            <li><a href="#">捐款方式</a></li>
+            <li><a href="#">領養專區</a></li>
+        </ul>
+    </div>
+
+    <div class="ban">
+     
+    </div>
+    <section class="ban12">
+      
+    </section>
+    <section class="ban2">
+      <div class="create-inin">
+        <h1>被棄養的動物<br>四處流浪</h1>
+      </div>
+    </section>
+    <!-- <img src="img/photo2.png"> -->
+    <!-- 頁腳 -->
+
+    <!-- <div style="background: rgb(170, 170, 170); width: 80%;height: 10px; position: relative; margin:auto; display: flex; justify-content: center center;"></div> -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-5 col-sm-12 footer_logo phone">
+                    <i class="fas fa-phone"></i><span>04-33556688</span>
+                    <div>服務時間：週一至週五 9:00 ~ 21:00</div>
+                </div>
+                <div class="col-md-6 col-sm-12 footer_address phone">
+                    <i class="fas fa-envelope"></i><span>聯絡地址</span>
+                    <div>404台中市北區崇德路一段635號</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-sm-8 col-xs-7">
+                    <img src="img/logo.png " style="width: 15%;margin: 10px 0;">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2 icon">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-line"></i>
+                </div>
+
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>COPYRIGHT © 2019 PET HOUSE .ALL RIGHTS RESERVED.</p>
+            </div>
+
+        </div>
+        <div style="background: #555; width: 100%;height: 2px;"></div>
+    </footer>
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fatNav.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+		  // cool nav menu
+		  $(window).on('load resize', function() {
+		    var $thisnav = $('.current-menu-item').offset().left;
+
+		    $('.menu-item').hover(function() {
+		      var $left = $(this).offset().left - $thisnav;
+		      var $width = $(this).outerWidth();
+		      var $start = 0;
+		      $('.wee').css({ 'left': $left , 'width': $width });
+		    }, function() {
+		      var $initwidth = $('.current-menu-item').width();
+		      $('.wee').css({ 'left': '0' , 'width': $initwidth });
+		    });
+		  });
+
+		});
+	</script>
+</body>
+
+</html>
