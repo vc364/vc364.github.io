@@ -24,7 +24,115 @@ a:hover{
     color: #777;
 }
 
+.gotop{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px 0px 0px 10px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    right: -55px;
+    top: 90%;
+    color: #fff;
+    padding: 10px 5px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+    -webkit-animation: hide .4s ease-out forwards 1;
+    animation: hide .4s ease-out forwards 1;
+    align-content: center;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition:all .4s;
+    -webkit-transition:all .4s;
+    -moz-transition:all .4s;
+    -ms-transition:all .4s;
+    -o-transition:all .4s;
+}
+.gotop:hover{
+    right: -50px;
+    background-color: #da1212;
+}
 
+.isvisible {
+    animation: show 1s ease-out forwards 1;
+    -webkit-animation: show 1s ease-out forwards 1;
+}
+@keyframes hide{
+    0% {
+      opacity: 1;
+      transform: translateX(-55px);
+      -webkit-transform: translateX(-55px);
+      -moz-transform: translateX(-55px);
+      -ms-transform: translateX(-55px);
+      -o-transform: translateX(-55px);
+}
+    25%{
+      opacity: .5;    
+    }
+    100%{
+      opacity: 0;
+      
+}
+  }
+@keyframes show{
+    0%{
+        opacity:0;
+    }
+    25%{
+      opacity: .5;     
+    } 
+    100%{
+      opacity: 1;
+      transform: translate(-50px);
+      -webkit-transform: translate(-50px);
+      -moz-transform: translate(-50px);
+      -ms-transform: translate(-50px);
+      -o-transform: translate(-50px);
+}
+  }
+
+.rightMenu{
+    position: fixed;
+    z-index: 3;
+    background-color: #FF6200;
+    border-radius: 10px 0px 0px 10px;
+    height: 260px;
+    width: 45px;
+    display: inline-block;
+    right: -5px;
+    top: 35%;
+    color: #fff;
+    padding: 10px 5px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+    display: flex;
+    align-content: center;
+    font-size: 1.2em;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    font-weight: 600;
+    text-align: center;
+}
+
+.rightMenu a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.rightMenu:hover{
+    right: -2px;
+    
+}
 
 .ban{
     
@@ -53,12 +161,22 @@ a:hover{
     height: 50%;
     background: rgba(190, 190, 190, 0.363);
 }
-.create-inin h1{
-    padding: 200px 20%;
+.create-inin .Cbox{
+    padding: 200px 0 200px 20%;
     color: #fff;
+    position: relative;
     
 }
+.Cbox h1{
+    display: inline;
+    background-color: rgb(46, 46, 46);
+   background-position-x: 5px;
+}
 
+.C-r{
+    padding: 200px 20% 200px 0 !important;
+    text-align: right;
+}
 .dbg{
     background: #333;
 }
@@ -67,7 +185,7 @@ a:hover{
     top:3px;
     left: 10px;
     height: 60px;
-    z-index: 5;
+    z-index: 7;
 
 }
 
@@ -89,7 +207,7 @@ a:hover{
    -ms-transition: 0.5s;
    -o-transition: 0.5s;
    opacity: 0;
-   z-index: 10;
+   z-index: 0;
    transform:scale(0.95);
    -webkit-transform:scale(0.95);
    -moz-transform:scale(0.95);
@@ -104,6 +222,7 @@ a:hover{
     -ms-transform:scale(1);
     -o-transform:scale(1);
     opacity: 0.9;
+    z-index: 10;
 }
 #menu-overlay ul{
     position: relative;
@@ -291,13 +410,15 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content:flex-end;
-    
+    z-index: 5;
     position: fixed;
     background-color: rgba(207, 207, 207,1);
   }
   .menu .menu-item {
     position: relative;
     cursor: pointer;
+    
+    padding: 2px 0;
     
   }
   .menu .menu-item .wee {
@@ -306,7 +427,7 @@ a:hover{
     background-color: #C24242;
     position: absolute;
     right: 0;
-    bottom: 0.2em;
+    
     transition: 0.75s;
   }
    .menu .menu-item h6 {
