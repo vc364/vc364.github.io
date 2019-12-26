@@ -13,9 +13,10 @@
   <!-- Main css -->
   <!-- <link href="css/jquery.fatNav.css" rel="stylesheet"> -->
   <link href="css/st.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/b29395932e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/b29395932e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./dist/sortable.min.css">
+  <script src="js/lada.min.js"></script>
   <script type="text/javascript" src="./dist/sortable.min.js"></script>
 </head>
 
@@ -59,6 +60,7 @@
 
 
   <main class="sortable">
+    <div class="od"></div>
     <div class="container">
       <div class="wrapper">
         <ul class="sortable__nav nav">
@@ -68,18 +70,18 @@
             </a>
           </li>
           <li>
-            <a data-sjslink="flatty" class="nav__link">
-              Flatty
+            <a data-sjslink="Dog" class="nav__link">
+              Dog
             </a>
           </li>
           <li>
-            <a data-sjslink="funny" class="nav__link">
-              Funny
+            <a data-sjslink="Cat" class="nav__link">
+              Cat
             </a>
           </li>
         </ul>
         <div id="sortable" class="sjs-default">
-          <div data-sjsel="flatty">
+          <div data-sjsel="Dog">
             <div class="card">
               <img class="card__picture" src="./img/main/pet1.jfif" alt="">
               <div class="card-infos">
@@ -88,10 +90,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, eius, asperiores. Incidunt sapiente
                   est quae iure...
                 </p>
+                <div class="infobtn">
+                  領養
+                </div>
               </div>
             </div>
           </div>
-          <div data-sjsel="flatty">
+          <div data-sjsel="Dog">
             <div class="card">
               <img class="card__picture" src="./img/main/pet2.jpg" alt="">
               <div class="card-infos">
@@ -100,10 +105,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae necessitatibus, dolorem
                   similique vero explicabo...
                 </p>
+                <div class="infobtn">
+                  領養
+                </div>
               </div>
             </div>
           </div>
-          <div data-sjsel="funny">
+          <div data-sjsel="Cat">
             <div class="card">
               <img class="card__picture" src="./img/main/pet3.jpg" alt="">
               <div class="card-infos">
@@ -112,10 +120,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, placeat voluptate, fuga tenetur eos
                   ducimus animi porro...
                 </p>
+                <div class="infobtn">
+                  領養
+                </div>
               </div>
             </div>
           </div>
-          <div data-sjsel="flatty">
+          <div data-sjsel="Dog">
             <div class="card">
               <img class="card__picture" src="./img/main/pet4.jpg" alt="">
               <div class="card-infos">
@@ -124,10 +135,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit doloremque quisquam, obcaecati unde
                   nam est quos...
                 </p>
+                <div class="infobtn">
+                  領養
+                </div>
               </div>
             </div>
           </div>
-          <div data-sjsel="flatty">
+          <div data-sjsel="Dog">
             <div class="card">
               <img class="card__picture" src="./img/main/pet5.jfif" alt="">
               <div class="card-infos">
@@ -136,10 +150,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse corporis hic minima nisi
                   reprehenderit...
                 </p>
+                <div class="infobtn">
+                  領養
+                </div>
               </div>
             </div>
           </div>
-          <div data-sjsel="funny">
+          <div data-sjsel="Dog">
             <div class="card">
               <img class="card__picture" src="./img/main/pet6.jpg" alt="">
               <div class="card-infos">
@@ -147,10 +164,13 @@
                 <p class="card__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptatibus, id, deserunt inventore...
                 </p>
+                <div class="infobtn">
+                  領養
+                </div>
               </div>
             </div>
           </div>
-          <div data-sjsel="flatty">
+          <div data-sjsel="Cat">
             <div class="card">
               <img class="card__picture" src="./img/main/pet7.jfif" alt="">
               <div class="card-infos">
@@ -159,10 +179,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum enim beatae vero culpa, fuga, magni
                   sunt dolores nam...
                 </p>
+                <div class="infobtn">
+                  領養
+                </div>
               </div>
             </div>
           </div>
-          <div data-sjsel="flatty">
+          <div data-sjsel="Cat">
             <div class="card">
               <img class="card__picture" src="./img/main/pet8.jpg" alt="">
               <div class="card-infos">
@@ -171,10 +194,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam, blanditiis
                   necessitatibus...
                 </p>
+                <div class="infobtn">
+                  領養
+                </div>
               </div>
             </div>
           </div>
-          <div data-sjsel="funny">
+          <div data-sjsel="Cat">
             <div class="card">
               <img class="card__picture" src="./img/main/pet9.jpg" alt="">
               <div class="card-infos">
@@ -183,6 +209,9 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur adipisci voluptatum laborum
                   officiis...
                 </p>
+                <div class="infobtn">
+                  領養
+                </div>
               </div>
             </div>
           </div>
@@ -246,7 +275,7 @@
       // $(".gototop").gototop();
       $(".gotop").gototop({
         position: 0,
-        duration: 1250,
+        duration: 1000,
         visibleAt: 300,
         classname: "isvisible"
       });

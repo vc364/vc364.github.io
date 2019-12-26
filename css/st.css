@@ -8,7 +8,14 @@ body{
     font-family: '微軟正黑體', sans-serif;
     background-color: rgb(255, 255, 255);
 }
-
+::selection{
+    background: var(--main-bg-color);
+    color: #C24242;
+  }
+  ::-moz-selection{
+    background: var(--main-bg-color);
+    color: #C24242;
+  }
 img{
     max-width: 100%;
     height: auto;
@@ -192,35 +199,27 @@ a:hover{
 /* 選單 menu */
 #menu-overlay{
    position: fixed;
-   top: 0;
+   top: 0px;
    left: 0;
    right: 0;
-   bottom:0;
+   bottom:2000px;
    background:rgb(255, 138, 71);
    display: flex;
    justify-content: center;
    align-items: center;
    overflow-y:auto;
-   transition: 0.5s;
-   -webkit-transition: 0.5s;
-   -moz-transition: 0.5s;
-   -ms-transition: 0.5s;
-   -o-transition: 0.5s;
+   transition:all 1.4s;
+   -webkit-transition:all 1.4s;
+   -moz-transition:all 1.4s;
+   -ms-transition:all 1.4s;
+   -o-transition:all 1.4s;
    opacity: 0;
    z-index: 0;
-   transform:scale(0.95);
-   -webkit-transform:scale(0.95);
-   -moz-transform:scale(0.95);
-   -ms-transform:scale(0.95);
-   -o-transform:scale(0.95);
+   
 }
 
 #menu-overlay.active{
-    transform:scale(1);
-    -webkit-transform:scale(1);
-    -moz-transform:scale(1);
-    -ms-transform:scale(1);
-    -o-transform:scale(1);
+    bottom: 0px;
     opacity: 0.9;
     z-index: 10;
 }
@@ -282,6 +281,7 @@ a:hover{
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
+    
 }
 #hamburger:hover{
     background:  #C24242;
@@ -403,7 +403,7 @@ a:hover{
 
 
 .menu {
-   
+    border-bottom: solid 3px rgb(177, 177, 177);
     padding-right: 80px;
     height: 70px;
     width: 100%;
@@ -446,3 +446,25 @@ a:hover{
   html body .menu .current-menu-item h6 {
     color: #C24242;
   }
+
+  .about{
+      height: 800px;
+      padding-top:100px;
+      background-color: rgb(233, 233, 233);
+  }
+
+  .abcase{
+      left:100px;
+      position: relative;
+      font-weight: 990;
+      color: #C24242;
+      letter-spacing: 2px;
+      font-size: 1.2em;
+      background-color: beige;
+  }
+  .about h2{
+      font-weight:800;
+      color: #000;
+  }
+
+  
