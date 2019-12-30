@@ -13,15 +13,21 @@
   <!-- Main css -->
   <!-- <link href="css/jquery.fatNav.css" rel="s
     tylesheet"> -->
-    <script src="js/lada.min.js"></script>
+  <script src="js/lada.min.js"></script>
   <link href="css/st.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b29395932e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./dist/sortable.min.css">
   <script type="text/javascript" src="./dist/sortable.min.js"></script>
+  <link rel="shortcut icon" href="./WEBGAME/TemplateData/favicon.ico">
+  <script src="./WEBGAME/TemplateData/UnityProgress.js"></script>
+  <script src="./WEBGAME/Build/UnityLoader.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "./WEBGAME/Build/WEBGAME.json", { onProgress: UnityProgress });
+  </script>
 </head>
 
-<body>
+<body style="background-color: rgb(22, 22, 22);">
   <div><img id="logo" src="img/logo2.png"></div>
   <div class="gotop">TOP</div>
   <div class="rightMenu"><a href="https://asms.coa.gov.tw/Amlapp/App/Default.aspx">全國動物收留中心</a></div>
@@ -37,7 +43,7 @@
     </a>
   </div>
   <div class="menu-item"><a href="./exp.html">
-      <h6>捐款方式</h6>
+      <h6>互動專區</h6>
     </a>
   </div>
   <div class="menu-item"><a href="./main.html">
@@ -54,93 +60,105 @@
     <ul>
       <li><a href="./index.html">回主頁</a></li>
       <li><a href="./about.html">關於我們</a></li>
-      <li><a href="./exp.html">捐款方式</a></li>
+      <li><a href="./exp.html">互動專區</a></li>
       <li><a href="./main.html">領養專區</a></li>
     </ul>
   </div>
-<div class="sod"></div><div class="sod"></div>
-
   
-  <!-- 頁腳 -->
+  
 
-  <!-- <div style="background: rgb(170, 170, 170); width: 80%;height: 10px; position: relative; margin:auto; display: flex; justify-content: center center;"></div> -->
-  <footer class="footer">
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-5 col-sm-12 footer_logo phone">
-          <i class="fas fa-phone"></i><span>04-33556688</span>
-          <div>服務時間：週一至週五 9:00 ~ 21:00</div>
-        </div>
-        <div class="col-md-6 col-sm-12 footer_address phone">
-          <i class="fas fa-envelope"></i><span>聯絡地址</span>
-          <div>404台中市北區崇德路一段635號</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-9 col-sm-8 col-xs-7">
-          <img src="img/logo.png " style="width: 15%;margin: 10px 0;">
-        </div>
-        <div class="col-md-2 col-sm-2 col-xs-2 icon">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-line"></i>
-        </div>
-
-      </div>
-      <div class="row footer_copyright justify-content-center">
-        <p>COPYRIGHT © 2019 PET HOUSE .ALL RIGHTS RESERVED.</p>
-      </div>
-
+  <div class="webgl-content">
+    <div class="od"></div>
+    <div class="keto"></div>
+    <div id="gameContainer">
     </div>
-    <div style="background: #555; width: 100%;height: 2px;"></div>
-  </footer>
+    <div class="footero">
+      
+      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      
+    </div>
 
-  <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
 
-  <script src="js/jquery-1.11.0.min.js"></script>
-  <script src="js/jquery.gototop.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fatNav.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript">
-    
-    $(function () {
-      // $(".gototop").gototop();
-      $(".gotop").gototop({
-        position: 0,
-        duration: 1250,
-        visibleAt: 300,
-        classname: "isvisible"
-      });
-    });
-    $(document).ready(function () {
-      // cool nav menu
-      $(window).on('load resize', function () {
-        var $thisnav = $('.current-menu-item').offset().left;
+    <!-- 頁腳 -->
 
-        $('.menu-item').hover(function () {
-          var $left = $(this).offset().left - $thisnav;
-          var $width = $(this).outerWidth();
-          var $start = 0;
-          $('.wee').css({ 'left': $left, 'width': $width });
-        }, function () {
-          var $initwidth = $('.current-menu-item').width();
-          $('.wee').css({ 'left': '0', 'width': $initwidth });
+    <!-- <div style="background: rgb(170, 170, 170); width: 80%;height: 10px; position: relative; margin:auto; display: flex; justify-content: center center;"></div> -->
+    <footer class="footer">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-5 col-sm-12 footer_logo phone">
+            <i class="fas fa-phone"></i><span>04-33556688</span>
+            <div>服務時間：週一至週五 9:00 ~ 21:00</div>
+          </div>
+          <div class="col-md-6 col-sm-12 footer_address phone">
+            <i class="fas fa-envelope"></i><span>聯絡地址</span>
+            <div>404台中市北區崇德路一段635號</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9 col-sm-8 col-xs-7">
+            <img src="img/logo.png " style="width: 15%;margin: 10px 0;">
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-2 icon">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-line"></i>
+          </div>
+
+        </div>
+        <div class="row footer_copyright justify-content-center">
+          <p>COPYRIGHT © 2019 PET HOUSE .ALL RIGHTS RESERVED.</p>
+        </div>
+
+      </div>
+      <div style="background: #555; width: 100%;height: 2px;"></div>
+    </footer>
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+      </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+      </script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.gototop.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fatNav.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+
+      $(function () {
+        // $(".gototop").gototop();
+        $(".gotop").gototop({
+          position: 0,
+          duration: 1250,
+          visibleAt: 300,
+          classname: "isvisible"
         });
       });
+      $(document).ready(function () {
+        // cool nav menu
+        $(window).on('load resize', function () {
+          var $thisnav = $('.current-menu-item').offset().left;
 
-    });
+          $('.menu-item').hover(function () {
+            var $left = $(this).offset().left - $thisnav;
+            var $width = $(this).outerWidth();
+            var $start = 0;
+            $('.wee').css({ 'left': $left, 'width': $width });
+          }, function () {
+            var $initwidth = $('.current-menu-item').width();
+            $('.wee').css({ 'left': '0', 'width': $initwidth });
+          });
+        });
 
-  </script>
+      });
+
+    </script>
 </body>
 
 </html>
