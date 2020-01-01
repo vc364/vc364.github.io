@@ -13,6 +13,7 @@ html{
   -webkit-text-size-adjust: 100%;
 }
 body{
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -74,6 +75,10 @@ hr{
   flex-direction: column;
   transition: box-shadow .2s ease-in-out;
 }
+
+.card h2{
+  font-size: 1.5em;
+}
 .card__picture{
   display: block;
   width: 100%;
@@ -88,7 +93,7 @@ hr{
   border-bottom-right-radius: 6px;
 }
 .card__title{
-  font-family: 'Hind';
+  
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.4;
@@ -207,4 +212,19 @@ a.nav__link:hover{
   background-color: #C24242;
   border-bottom: rgb(131, 31, 31) 2.5px solid;
   cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+  .card h2{
+    font-size: 1.3em;
+  }
+.card__text{
+  font-size: 1.1em;
+}
+.infobtn{
+  width: 50px;
+  height: 40px;
+  font-size: .9em;
+  
+}
 }
