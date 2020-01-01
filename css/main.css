@@ -193,6 +193,15 @@ a.nav__link:hover{
   -o-transition: all .4s;
   border-bottom: rgb(148, 148, 148) 2.5px solid;
 }
+.infobtn a{
+  width: 100%;
+  height: 100%;
+  
+}
+.infobtn a:hover{
+  text-decoration: none;
+  color: #fff;
+}
 
 .infobtn:hover{
   background-color: #C24242;
