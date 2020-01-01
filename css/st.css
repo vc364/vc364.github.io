@@ -354,9 +354,11 @@ a:hover{
 
 /* 頁腳 footer */
 .footer {
+    position: relative;
     background-color: #9c9c9c;
     padding: 15px 0;
     border-bottom: solid 5px #333;
+    bottom: 0px;
 }
 
 
@@ -461,26 +463,53 @@ a:hover{
   }
 
   .about{
-      height:100%;
-      padding-top:50px;
+      height: 100%;
+      padding-top:300px;
       background-color: rgb(233, 233, 233);
       
   }
-
+.about .bk{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(216, 216, 216);
+}
+.about .bk2{
+    position: absolute;
+    width: 700px;
+    right: 0px;
+    top:1000px;
+    height: 300px;
+    background-color: rgb(216, 216, 216);
+}
+.about .bk3{
+    position: absolute;
+    width: 500px;
+   
+    top:1800px;
+    height: 300px;
+    background-color: rgb(216, 216, 216);
+}
   .abcase{
-      padding: 0 100px;
+    height:700px;
+      padding: 0 25%;
       position: relative;
       font-weight: 500;
-      margin-bottom: 50px;
       letter-spacing: 2px;
       font-size: 1.2em;
-      background-color: beige;
+      /* background-color: beige; */
+      
   }
   .about h3{
       font-weight:800;
       color: #000;
       margin: 20px 0 20px 0;
   }
+
+.ftlogo{
+    width: 100px;
+    margin: 10px 0;
+}
 
 
   /* game */
@@ -506,6 +535,7 @@ a:hover{
     background-image: url(../WEBGAME/TemplateData/fullscreen.png);
     width: 38px; 
     height: 38px;
+    cursor: pointer;
     
   }
 
@@ -529,7 +559,9 @@ a:hover{
         display: none !important;
         opacity: 0;
     } 
-
+ .ftlogo{
+    width: 100px !important;
+}
     .rightMenu{
         width: 30px;
         height: 200px;
@@ -553,22 +585,28 @@ a:hover{
     padding-top:60px;
     
 }
-}
-
-@media screen and (max-width:780px){
-    .about{
-        height: 1000px;
-    }
-}
-
-@media screen and (max-width:627px){
-    .about{
-        height: 1200px;
-    }
-}
-@media screen and (max-width:517px){
-    .about{
-        height: 1500px;
+.about .bk{
     
-    }
+    width: 100%;
+    height: 400px;
 }
+.about .bk2{
+    
+    width: 100%;
+    height: 500px;
+}
+
+.about .bk3{
+    
+    width: 100%;
+    height: 500px;
+}
+
+.abcase{
+    
+      padding: 0 15%;
+     
+      
+  }
+}
+
