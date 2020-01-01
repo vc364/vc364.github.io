@@ -30,7 +30,10 @@ a:hover{
     text-decoration: none;
     color: #777;
 }
-
+.od{
+    padding-top:100px;
+    background-color: #fff;
+   }
 .gotop{
     display: none;
     position: fixed;
@@ -144,8 +147,9 @@ a:hover{
 .ban{
     
     height: 1080px;
-    background: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     background-image: url(../img/t5.png);
+    
 }
 .ban2{
     height: 900px;
@@ -400,7 +404,15 @@ a:hover{
     position: fixed;
 }
 
-
+.debugmodez{
+    background-color: rgb(115, 194, 25) !important;
+}
+.debugmodex{
+    background-color: rgb(25, 112, 194) !important;
+}
+.debugmodec{
+    background-color: rgb(221, 76, 96) !important;
+}
 
 .menu {
     border-bottom: solid 3px rgb(177, 177, 177);
@@ -416,11 +428,12 @@ a:hover{
   }
   .menu .menu-item {
     position: relative;
-    cursor: pointer;
-    
+    cursor: pointer;   
     padding: 2px 0;
     
   }
+  
+
   .menu .menu-item .wee {
     height: 5px;
     width: 100%;
@@ -448,23 +461,25 @@ a:hover{
   }
 
   .about{
-      height: 800px;
-      padding-top:100px;
+      height:100%;
+      padding-top:50px;
       background-color: rgb(233, 233, 233);
+      
   }
 
   .abcase{
-      left:100px;
+      padding: 0 100px;
       position: relative;
-      font-weight: 990;
-      color: #C24242;
+      font-weight: 500;
+      margin-bottom: 50px;
       letter-spacing: 2px;
       font-size: 1.2em;
       background-color: beige;
   }
-  .about h2{
+  .about h3{
       font-weight:800;
       color: #000;
+      margin: 20px 0 20px 0;
   }
 
 
@@ -480,7 +495,7 @@ a:hover{
       background-color: #333;
   }
   .footero{
-      height: 400px;
+      height: 600px;
       background-color: #333;
      
      padding: 5px 0;
@@ -493,4 +508,66 @@ a:hover{
     height: 38px;
     
   }
-  
+
+  .gameinfo{
+      padding-top:100px;
+      margin: 0 25%;
+      text-align: center;
+  }
+
+  .gameinfo h3{
+      margin-top:40px;
+      border: #fff 1px solid;
+     
+      font-weight: 800;
+      
+  }
+
+  /* RWD settings */
+  @media screen and (max-width:550px) {
+    .menu-item {
+        display: none !important;
+        opacity: 0;
+    } 
+
+    .rightMenu{
+        width: 30px;
+        height: 200px;
+        color: #C24242;
+        font-size: 0.9em;
+    }
+
+    .gotop{
+        width: 30px;
+        height: 40px;
+        border-radius: 7px 0 0 7px;
+        -webkit-border-radius: 7px 0 0 7px;
+        -moz-border-radius: 7px 0 0 7px;
+        -ms-border-radius: 7px 0 0 7px;
+        -o-border-radius: 7px 0 0 7px;
+        font-size:0.6em;
+        padding: 11px 1px;
+       
+}
+.gameinfo{
+    padding-top:60px;
+    
+}
+}
+
+@media screen and (max-width:780px){
+    .about{
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width:627px){
+    .about{
+        height: 1200px;
+    }
+}
+@media screen and (max-width:517px){
+    .about{
+        height: 1500px;
+    }
+}
