@@ -167,10 +167,10 @@ a:hover{
     left: calc(50% - 25px);
    animation-name: example;
    animation-iteration-count: infinite;
-   animation-duration: 3s;
+   animation-duration: 2.3s;
    animation-direction: alternate;  
    
-   animation-timing-function: ease-in;
+   animation-timing-function: ease-in-out;
 }
 
 
@@ -188,7 +188,7 @@ a:hover{
     
     50%  {bottom: 40px;}
     
-    100%  {bottom: 15px;}
+    100%  {bottom: 20px;}
   }
 
 
@@ -542,11 +542,21 @@ a:hover{
 }
 .about .bk3{
     position: absolute;
-    width: 100%;
+    width: 80%;
    left: 0;
     top:0px;
-    height: 20px;
-    background-color: rgb(255, 212, 212);
+    height: 40px;
+    background-color: rgb(250, 226, 190);
+    
+}
+.about .bk4{
+    position: absolute;
+    width: 40px;
+   left: 0;
+    top:0px;
+    height: 300px;
+    background-color: rgba(255, 229, 194, 0.418);
+    
 }
   .abcase{
     height:700px;
@@ -563,6 +573,7 @@ a:hover{
       /* background-color: beige; */
       background-color: rgba(255, 255, 255, 0.377);
   }
+ 
   .abcase1{
     height:700px;
       padding: 100px 25%;
@@ -575,15 +586,19 @@ a:hover{
       
   }
   .abcase2{
-    height:700px;
+    height:900px;
       padding: 100px 25%;
       position: relative;
       font-weight: 500;
       letter-spacing: 2px;
       font-size: 1.2em;
-      background-color: rgb(255, 225, 225);
+      background-color: rgb(255, 245, 219);
       /* background-color: beige; */
-      
+      background-image: url(../img/bl2.png);
+      background-size: 100%;
+      background-position-y: 100%;
+      background-position-x: 0%;
+      background-repeat: no-repeat;
   }
   .about h3{
       font-weight:800;
@@ -695,6 +710,8 @@ a:hover{
     .ban{
         height: 600px;
         background-position-x: -250px;
+        background-image: url(../img/bgri.png);
+        background-position-x: 2.5%;
     }
     .ktlogo{
        margin-top:20%;
@@ -764,7 +781,7 @@ a:hover{
 .abcase2{
     
     padding: 60px 15% 20px 15%;
-   
+   height: 700px;
     
 }
 
