@@ -689,7 +689,7 @@ a:hover{
   @media screen and (max-width:550px) {
 
 .ban12{
-        background-image: url(../img/d13s.png);
+        background-image: url(../img/d13sx.png);
         background-size: contain;
     }
     .ban{
@@ -747,11 +747,7 @@ a:hover{
     height: 500px;
 }
 
-.about .bk3{
-    
-    width: 100%;
-    height: 500px;
-}
+
 
 .abcase{
     
@@ -759,6 +755,19 @@ a:hover{
      
       
   }
+  .abcase1{
+    
+    padding: 20px 15%;
+   
+    
+}
+.abcase2{
+    
+    padding: 60px 15% 20px 15%;
+   
+    
+}
+
   .footer {
     position: relative;
     background-color: #9c9c9c;
