@@ -145,12 +145,53 @@ a:hover{
 }
 
 .ban{
-    
-    height: 1080px;
-    background-color: rgb(255, 255, 255);
-    background-image: url(../img/t5.png);
-    
+   position: relative;
+    height: 900px;
+    max-width: 100%;
+    background-image: url(../img/bgri2.png);
+    background-color: #FFF4D3;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    display:  block;
+    /* background-image: url(../img/t5.png) ;
+    background-repeat: no-repeat; */
 }
+
+.downP{
+    position: absolute;
+    background-image: url(../img/down.png);
+    width: 50px;
+    height: 50px;
+    background-size:100%;
+    bottom:20px;
+    left: calc(50% - 25px);
+   animation-name: example;
+   animation-iteration-count: infinite;
+   animation-duration: 3s;
+   animation-direction: alternate;  
+   
+   animation-timing-function: ease-in;
+}
+
+
+.ktlogo{
+    position: absolute;
+    background-image: url(../img/ll.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size:100%;
+    height: 900px;
+}
+
+@keyframes example {
+    0%   {bottom: 20px;}
+    
+    50%  {bottom: 40px;}
+    
+    100%  {bottom: 15px;}
+  }
+
+
 .ban2{
     height: 900px;
     background-image: url(../img/pt2.png);
@@ -553,8 +594,57 @@ a:hover{
       
   }
 
+
+
   /* RWD settings */
+  @media screen and (min-width:1900px){
+    .ktlogo{
+        margin-top:-3%;
+        
+     }
+  }
+  @media screen and (max-width:1275px){
+    .create-inin .Cbox{
+        padding: 400px 0 200px 5%;
+        color: #fff;
+        position: relative;
+             
+    }
+.Cbox h1{
+    border-bottom: rgb(141, 141, 141) 2px solid;
+    
+}
+
+
+
+  }
+
+  @media screen and (max-width:1100px){
+    .ban{
+        height: 600px;
+        background-position-x: -250px;
+    }
+    .ktlogo{
+       margin-top:5%;
+       
+    }
+    .Cbox h1{
+        border-bottom: rgb(141, 141, 141) 2px solid;
+        font-size: 1.9em;
+    }
+  }
+
   @media screen and (max-width:550px) {
+
+    .ban{
+        height: 600px;
+        background-position-x: -250px;
+    }
+    .ktlogo{
+       margin-top:20%;
+       background-size: contain;
+       background-image: url(../img/lls.png);
+    }
     .menu-item {
         display: none !important;
         opacity: 0;
@@ -583,7 +673,12 @@ a:hover{
 }
 .gameinfo{
     padding-top:60px;
-    
+    font-size: 0.7em;
+}
+
+.gameinfo h3{
+    font-size: 1.6em;
+    border: #fff 0.1px solid;
 }
 .about .bk{
     
@@ -608,5 +703,63 @@ a:hover{
      
       
   }
+  .footer {
+    position: relative;
+    background-color: #9c9c9c;
+    padding: 15px 30px;
+    border-bottom: solid 5px #333;
+    bottom: 0px;
+    font-size: 12px;
+}
+
+
+.footer_address ul {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.2rem;
+    color: #3a3939;
+}
+
+.footer_copyright {
+    padding: 15px 0;
+    font-size: 10px;
+}
+
+.footer .phone{
+    background: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin: 5px 10px;
+    border-bottom: #333 5px solid;
+    border-right: #333 3px solid;
+}
+
+.footer .icon{
+   
+   margin: 0 10px;
+    padding: 15px 0;
+  position: relative;
+  right: 0px;
+  
+}
+
+.footer span{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 800;
+}
+.footer i{
+    font-size: 15px;
+    margin: 3px;
+}
+.fullscreen{
+    background-size: contain;
+    width: 25px; 
+    height: 25px;
+    cursor: pointer;
+    
+  }
+
+
 }
 
