@@ -208,13 +208,29 @@ a:hover{
     
 }
 
+.ban3{
+    height: 900px;
+    background-image: url(../img/r4.png);
+    background-color: rgb(245, 245, 245);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+
 /* 主頁內文 */
 .create-inin{
     height: 50%;
-    background: rgba(190, 190, 190, 0.363);
+    background: rgba(230, 230, 230, 0.363);
+}
+
+.inColorO{
+    background-color: rgba(218, 218, 218, 0.199) !important;
+}
+.newcolord h1{
+    background-color: rgb(243, 80, 40) !important;
 }
 .create-inin .Cbox{
-    padding: 200px 0 200px 20%;
+    padding: 200px 0 200px 10%;
     color: #fff;
     position: relative;
     
@@ -226,7 +242,7 @@ a:hover{
 }
 
 .C-r{
-    padding: 200px 20% 200px 0 !important;
+    padding: 200px 10% 200px 0 !important;
     text-align: right;
 }
 .dbg{
@@ -512,7 +528,8 @@ a:hover{
 .about .bk{
     position: absolute;
     width: 500px;
-    height: 300px;
+    height:300px;
+    top: 200px;
     background-color: rgb(216, 216, 216);
 }
 .about .bk2{
@@ -521,23 +538,50 @@ a:hover{
     right: 0px;
     top:1000px;
     height: 300px;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(226, 209, 209);
 }
 .about .bk3{
     position: absolute;
-    width: 500px;
-   
-    top:1800px;
-    height: 300px;
-    background-color: rgb(216, 216, 216);
+    width: 100%;
+   left: 0;
+    top:0px;
+    height: 20px;
+    background-color: rgb(255, 212, 212);
 }
   .abcase{
     height:700px;
-      padding: 0 25%;
+      padding: 20px 25%;
       position: relative;
       font-weight: 500;
       letter-spacing: 2px;
       font-size: 1.2em;
+      background-image: url(../img/yuru_neko6.png);
+      background-size: 300px;
+      background-position-y: 50%;
+      background-position-x: 40%;
+      background-repeat: no-repeat;
+      /* background-color: beige; */
+      background-color: rgba(255, 255, 255, 0.377);
+  }
+  .abcase1{
+    height:700px;
+      padding: 100px 25%;
+      position: relative;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 1.2em;
+      background-color: rgb(255, 234, 234);
+      /* background-color: beige; */
+      
+  }
+  .abcase2{
+    height:700px;
+      padding: 100px 25%;
+      position: relative;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 1.2em;
+      background-color: rgb(255, 225, 225);
       /* background-color: beige; */
       
   }
@@ -614,7 +658,9 @@ a:hover{
     border-bottom: rgb(141, 141, 141) 2px solid;
     
 }
-
+.C-r{
+    padding:400px 7% 200px 0 !important;
+}
 
 
   }
@@ -632,10 +678,20 @@ a:hover{
         border-bottom: rgb(141, 141, 141) 2px solid;
         font-size: 1.9em;
     }
+    .ban12{
+        background-size: cover;
+    }
+    .C-r{
+        padding:400px 7% 200px 0 !important;
+    }
   }
 
   @media screen and (max-width:550px) {
 
+.ban12{
+        background-image: url(../img/d13s.png);
+        background-size: contain;
+    }
     .ban{
         height: 600px;
         background-position-x: -250px;
